@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <select name="idType" id="" required >
+            <option value="voterid">Voter id</option>
+            <option value="aadharid">Aadhar id</option>
+        </select>
+        <input id='File' type="file" name="image"  >
+        <input type="submit" >
+    </form>
+</body>
+<script>
+    function done(){
+
+        const fileName=document.querySelector('#File').attributes;
+        // const fileName=document.querySelector('#File');
+    // const hello=document.getElementById('File').setAttribute('data-fname',"hellooo");
+    console.log(fileName)
+    // console.log(hello)
+}
+
+</script>
+</html>
